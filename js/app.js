@@ -3,8 +3,7 @@
 
     function Urbn() {
         this.config = new app.Config();
-        this.map = new app.Map(this.config);
-
+        this.controller = new app.Controller();
         this.dropdown = new component.Dropdown();
     }
 

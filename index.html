@@ -8,10 +8,12 @@
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-        <script type="text/javascript" src="js/component/dropdown.js"></script>
+        <script src="js/extension/osmtogeojson.js"></script>
         <script type="text/javascript" src="js/extension/jquery.tinypubsub.js"></script>
+        <script type="text/javascript" src="js/component/dropdown.js"></script>
+        <script type="text/javascript" src="js/component/map.js"></script>
         <script type="text/javascript" src="js/config.js"></script>
-        <script type="text/javascript" src="js/map.js"></script>
+        <script type="text/javascript" src="js/controller.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700|Open+Sans:600' rel='stylesheet' type='text/css' />
         <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
@@ -32,10 +34,13 @@
                     <div class="dropdown-menu hide">
                         <ul class="navigation">
                             <li class="navigation-item">
-                                <a href="#" data-event="map-create">New Map</a>
+                                <a href="#" data-event="map-new">New Map</a>
                             </li>
                             <li class="navigation-item">
-                                <a href="#" data-event="map-destroy">Delete Map</a>
+                                <a href="#" data-event="map-delete">Delete Map</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#" data-event="map-delete">Delete Map</a>
                             </li>
                         </ul>
                     </div>
