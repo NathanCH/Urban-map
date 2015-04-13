@@ -26,7 +26,7 @@
         });
 
         self.getData(function(data){
-            self.map.render(data);
+            self.map.plot(data.osm, true);
         });
     }
 
@@ -35,7 +35,7 @@
     }
 
     Controller.prototype.getData = function(callback) {
-        $.getJSON('js/data/drinking-fountains-pnw.json', callback);
+        $.getJSON('js/data/mock-tunnel-results.json', callback);
     }
 
     window.app = window.app || {};
