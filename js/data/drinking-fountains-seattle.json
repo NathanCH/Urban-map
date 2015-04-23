@@ -1,0 +1,219 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API",
+  "osm3s": {
+    "timestamp_osm_base": "2015-04-18T08:38:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 581066509,
+  "lat": 47.6007710,
+  "lon": -122.3330562,
+  "tags": {
+    "amenity": "drinking_water",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 581066552,
+  "lat": 47.5990470,
+  "lon": -122.3281990,
+  "tags": {
+    "amenity": "drinking_water",
+    "description": "Weekdays 8am to 5pm",
+    "name": "Inside Union Station",
+    "stateofrepair": "ok"
+  }
+},
+{
+  "type": "node",
+  "id": 761917484,
+  "lat": 47.6264860,
+  "lon": -122.3744320,
+  "tags": {
+    "amenity": "drinking_water",
+    "source": "yahoo_wms;survey"
+  }
+},
+{
+  "type": "node",
+  "id": 763004590,
+  "lat": 47.6276524,
+  "lon": -122.3671992,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1494507753,
+  "lat": 47.5923988,
+  "lon": -122.2425500,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1837130905,
+  "lat": 47.5924367,
+  "lon": -122.3852988,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1837296412,
+  "lat": 47.5951957,
+  "lon": -122.3873922,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1837300480,
+  "lat": 47.5924042,
+  "lon": -122.3822464,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2030778919,
+  "lat": 47.6304723,
+  "lon": -122.3151271,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2030786650,
+  "lat": 47.5993684,
+  "lon": -122.3170798,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2030802220,
+  "lat": 47.5900531,
+  "lon": -122.2955524,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2030812635,
+  "lat": 47.6103113,
+  "lon": -122.2821011,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2030853771,
+  "lat": 47.6290286,
+  "lon": -122.2963164,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2030857747,
+  "lat": 47.6433045,
+  "lon": -122.3202676,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2355652808,
+  "lat": 47.6294481,
+  "lon": -122.3599356,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2416635083,
+  "lat": 47.5796125,
+  "lon": -122.4097261,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2474089169,
+  "lat": 47.6105258,
+  "lon": -122.3486178,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2666623900,
+  "lat": 47.6322762,
+  "lon": -122.3565958,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 3057857933,
+  "lat": 47.6151875,
+  "lon": -122.3550831,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 3228915561,
+  "lat": 47.5995570,
+  "lon": -122.3289190,
+  "tags": {
+    "amenity": "drinking_water",
+    "description": "Just north of Jackson on the east side of 4th",
+    "name": "4th and Jackson",
+    "source": "Drinking Water Fountain",
+    "stateofrepair": "ok"
+  }
+},
+{
+  "type": "node",
+  "id": 3404836093,
+  "lat": 47.5805723,
+  "lon": -122.3132848,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 3425448696,
+  "lat": 47.5967978,
+  "lon": -122.3235718,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+}
+
+  ]
+}

@@ -12,7 +12,9 @@
         var self = this;
 
         $(self.toggle).on('click', function(e){
-            $(this).find(self.menu).toggle();
+            var $thisMenu = $(this).find(self.menu);
+            $(self.menu).not($thisMenu).hide();
+            $thisMenu.toggle();
             return false;
         });
 

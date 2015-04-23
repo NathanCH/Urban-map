@@ -39,17 +39,33 @@
         }
     }
 
-    Map.prototype.plot = function(data, osm) {
-        var osm = osm || false;
+    Map.prototype.plot = function(data, type) {
+        var type = type || false;
         var data = data;
 
-        if(osm) {
+        if(type && type === 'osm') {
             var data = this._toGeoJson(data);
         }
 
-        L.geoJson(data).addTo(this.map);
+        L.geoJson(data, this.geoJsonSettings).addTo(this.map);
     }
 
+    // Todo: set through callback.
+    Map.prototype.geoJsonSettings = {
+        style: function(feature) {
+            switch(feature.properties.tags.building) {
+                case 'residential': return { color: '#35d90e' };
+                case 'commercial':  return { color: '#3288d1' };
+                case 'apartments':  return { color: '#d21f1f' };
+            }
+        },
+        onEachFeature: function(feature, layer) {
+            layer.bindPopup('Type: '+feature.properties.tags.building);
+        },
+        filter: function(feature, layer) {
+            return feature.properties.tags.building;
+        }
+    }
     window.component = window.component || {};
     window.component.Map = Map;
 })(window, jQuery, L);

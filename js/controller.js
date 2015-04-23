@@ -9,24 +9,41 @@
     Controller.prototype.bindEvents = function() {
         var self = this;
 
-        $('[data-event="map-new"]').on('click', function(e) {
-            self.newMap();
+        $('[data-event="map-create"]').on('click', function(e) {
+            self.createMap();
         });
 
         $('[data-event="map-delete"]').on('click', function() {
             self.deleteMap();
         });
-    }
 
-    Controller.prototype.newMap = function() {
-        var self = this;
-        self.map.create({
-            center: [49.27, -123.12],
-            zoom: 12
+        $('[data-event="map-plot"]').on('click', function() {
+            var src = $(this).data('src');
+            self.plotData(src);
         });
 
-        self.getData(function(data){
-            self.map.plot(data.osm, true);
+        $('[data-event="map-toggle"]').on('click', function() {
+            var type = $(this).data('type');
+            self.toggleDisplay(type);
+        });
+    }
+
+    Controller.prototype.toggleDisplay = function(type){
+        console.log(type);
+    }
+
+    Controller.prototype.plotData = function(src) {
+        var self = this;
+        self.getData(src, function(data){
+            self.map.plot(data, 'osm');
+        });
+    }
+
+    Controller.prototype.createMap = function() {
+        var self = this;
+        self.map.create({
+            center: [49.6, -122.3],
+            zoom: 8
         });
     }
 
@@ -34,8 +51,8 @@
         this.map.delete();
     }
 
-    Controller.prototype.getData = function(callback) {
-        $.getJSON('js/data/mock-tunnel-results.json', callback);
+    Controller.prototype.getData = function(data, callback) {
+        $.getJSON('js/data/'+data, callback);
     }
 
     window.app = window.app || {};

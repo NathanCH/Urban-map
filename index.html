@@ -34,10 +34,38 @@
                     <div class="dropdown-menu hide">
                         <ul class="navigation">
                             <li class="navigation-item">
-                                <a href="#" data-event="map-new">New Map</a>
+                                <a href="#" data-event="map-create">New Map</a>
                             </li>
                             <li class="navigation-item">
                                 <a href="#" data-event="map-delete">Delete Map</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#" data-event="map-plot" data-src="drinking-fountains-seattle.json">Plot Drinking Water</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#" data-event="map-plot" data-src="parks-seattle.json">Plot Parks</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#" data-event="map-plot" data-src="buildings-dtn-vancouver.json">Plot Buildings</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-button">
+                        <i class="fa fa-gears"></i>
+                    </a>
+                    <div class="dropdown-menu hide">
+                        <ul class="navigation">
+                            <li class="navigation-item">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" data-event="map-toggle" data-type="name"/>
+                                    Name
+                                </label>
+                                <label class="checkbox-container">
+                                    <input type="checkbox" data-event="map-toggle" data-type="created"/>
+                                    Date Created
+                                </label>
                             </li>
                         </ul>
                     </div>

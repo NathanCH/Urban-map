@@ -7,6 +7,7 @@
 		position: relative;
 		height: 100%;
         margin: 0px;
+        color: #444;
 	}
 
     a{ color: #ff7e00; }
@@ -48,6 +49,7 @@
 
     .logo-container{
         display: inline-block;
+        margin-right: 40px;
     }
 
     .logo-text{
@@ -85,7 +87,7 @@
         display: block;
         width: 28px;
         height: 28px;
-        margin: 12px 0px 12px 50px;
+        margin: 12px 6px;
         background: #eeeeee;
         border-radius: 3px;
         text-align: center;
@@ -109,9 +111,7 @@
         border-radius: 2px;
     }
 
-
     .dropdown-menu a{
-        padding: 10px 15px;
         white-space: nowrap;
         display: block;
         color: #555;
@@ -120,5 +120,13 @@
 
     .dropdown-menu a:hover{
         background: #eee;
+    }
+
+    .dropdown-menu li > *{
+        padding: 10px 15px;
+    }
+
+    .checkbox-container{
+        display: block;
     }
 
